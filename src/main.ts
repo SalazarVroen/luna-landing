@@ -8,29 +8,14 @@ const clamp = (n: number, lo = 0, hi = 1) => Math.min(hi, Math.max(lo, n));
 const easeOut = (p: number) => 1 - Math.pow(1 - p, 4);
 const calm = matchMedia('(prefers-reduced-motion: reduce)');
 
-/* ---------- Pause animation (WCAG 2.2.2), remembered on this device ---------- */
+/* ---------- Motion switch: still is off; flip it here (and add html.still) to freeze the page ---------- */
 const motion = {
   still: false,
   listeners: [] as ((still: boolean) => void)[],
-  set(v: boolean) {
-    this.still = v;
-    document.documentElement.classList.toggle('still', v);
-    try {
-      localStorage.setItem('lunaos.still', v ? '1' : '0');
-    } catch {
-      /* storage blocked */
-    }
-    this.listeners.forEach((f) => f(v));
-  },
   on(f: (still: boolean) => void) {
     this.listeners.push(f);
   },
 };
-try {
-  motion.still = localStorage.getItem('lunaos.still') === '1';
-} catch {
-  /* storage blocked */
-}
 
 /* ---------- Skies ---------- */
 function skies() {
@@ -503,23 +488,11 @@ function wire() {
     if (check) openCheck();
     else openJoin();
   });
-  const btn = $<HTMLButtonElement>('[data-motion]')!;
-  const label = () => {
-    btn.textContent = motion.still ? 'Play animation' : 'Pause animation';
-    btn.setAttribute('aria-pressed', String(motion.still));
-  };
-  btn.addEventListener('click', () => {
-    motion.set(!motion.still);
-    label();
-  });
-  label();
   if (location.hash === '#check') openCheck();
 }
 
-document.documentElement.classList.toggle('still', motion.still);
 splitTitle();
 skies();
-if (motion.still) motion.set(true);
 myths();
 counts();
 bodyClock();

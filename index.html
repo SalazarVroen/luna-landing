@@ -221,6 +221,7 @@
                 <li><b>Inaugural price</b><span>₹9,999 instead of ₹25,000.</span></li>
                 <li><b>Shape Luna</b><span>Beta users help decide what we build.</span></li>
               </ul>
+              <div class="pass-buy">
               <div class="price" aria-label="Inaugural offer: 9,999 rupees, down from 25,000 rupees">
                 <p class="price-tag" aria-hidden="true"><s>₹25,000</s><span class="save">60% off</span></p>
                 <p class="price-now" aria-hidden="true"><span class="rupee">₹</span>9,999</p>
@@ -232,6 +233,7 @@
               </div>
               <p class="fine">The sleep check is free, and so is joining the waitlist. No payment now: we’ll be in touch before launch.</p>
               <noscript><p class="fine">The sleep check and waitlist need JavaScript turned on.</p></noscript>
+              </div>
             </div>
           </div>
         </div>
@@ -239,7 +241,11 @@
     </main>
 
     <footer class="foot">
-      <p class="wordmark" aria-hidden="true">LunaOS</p>
+      <div class="signoff">
+        <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a9 9 0 1 0 5 15.5A7.5 7.5 0 1 1 16 3z" fill="url(#moon)" /></svg>
+        <p class="signoff-name">LunaOS</p>
+        <p class="signoff-line">Stop trying to sleep.</p>
+      </div>
       <div class="wrap foot-in">
         <ol class="sources">
           <li id="src-1">Morin CM et al. Insomnia disorder. <i>Nature Reviews Disease Primers</i>, 2015.</li>
@@ -250,10 +256,8 @@
           <li id="src-6">Ansfield ME, Wegner DM, Bowser R. Ironic effects of sleep urgency. <i>Behaviour Research and Therapy</i>, 1996.</li>
         </ol>
         <p>LunaOS is a wellbeing program, not a diagnosis or a replacement for medical care. If you’re in crisis or think you might harm yourself, contact your local emergency number now.</p>
-        <div class="foot-row">
-          <p>We only use your email to tell you about LunaOS. © 2026 LunaOS</p>
-          <button type="button" class="motion-btn" data-motion aria-pressed="false">Pause animation</button>
-        </div>
+        <p class="foot-legal">We only use your email to tell you about LunaOS. © 2026 LunaOS</p>
+        <p class="made">Made with <svg class="heart" width="15" height="15" viewBox="0 0 24 24" role="img" aria-label="love"><path d="M12 21s-7.5-4.6-9.6-9.4C.9 8.1 3 4.5 6.6 4.5c2.1 0 3.6 1.2 4.4 2.6.8-1.4 2.3-2.6 4.4-2.6 3.6 0 5.7 3.6 4.2 7.1C19.5 16.4 12 21 12 21z" /></svg> by Ivory Cognition Labs</p>
       </div>
     </footer>
 
@@ -263,6 +267,23 @@
 
     <dialog class="sheet" aria-labelledby="sheet-title">
       <canvas class="sheet-sky" aria-hidden="true"></canvas>
+      <div class="sheet-grid">
+      <!-- Desktop only: the offer stays in view beside the check and the form. -->
+      <aside class="sheet-aside">
+        <p class="aside-logo"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a9 9 0 1 0 5 15.5A7.5 7.5 0 1 1 16 3z" fill="url(#moon)" /></svg>LunaOS Beta</p>
+        <p class="aside-title">Stop trying <em>to sleep.</em></p>
+        <p class="aside-sub">An AI-guided program built on CBT-I, the treatment guidelines recommend first for insomnia.</p>
+        <div class="aside-price">
+          <p class="price-tag"><s>₹25,000</s><span class="save">60% off</span></p>
+          <p class="aside-now"><span class="rupee">₹</span>9,999</p>
+          <p class="price-note">Inaugural offer for beta users · the full 6-week program</p>
+        </div>
+        <ul class="aside-list" role="list">
+          <li>Free 2-minute sleep check</li>
+          <li>Free to join the waitlist, no payment now</li>
+          <li>We’ll be in touch before launch</li>
+        </ul>
+      </aside>
       <div class="sheet-in">
         <div class="sheet-top">
           <button type="button" class="round" data-back aria-label="Back">
@@ -277,6 +298,7 @@
           </button>
         </div>
         <div class="sheet-body"></div>
+      </div>
       </div>
     </dialog>
 

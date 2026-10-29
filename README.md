@@ -44,4 +44,4 @@ Five of our own questions, each 0–4, total 0–20, score = round((20 − total
 
 ## Motion
 
-Full motion by default. With the system's reduced-motion setting on, the page keeps fades, glows and a slower aurora, and drops travel, blur-ins and 3D. The footer's Pause animation button stops everything and is remembered on the device.
+Full motion by default. With the system's reduced-motion setting on, the page keeps fades, glows and a slower aurora, and drops travel, blur-ins and 3D.
