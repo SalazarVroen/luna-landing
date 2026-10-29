@@ -31,8 +31,6 @@ h1, h2, h3 { margin: 0; text-wrap: balance; }
 p { margin: 0; text-wrap: pretty; }
 a { color: inherit; }
 button { font: inherit; color: inherit; }
-sup { font-size: 0.6em; line-height: 0; margin-left: 2px; }
-sup a { color: var(--accent); text-decoration: none; font-weight: 700; }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
 em { font-family: var(--font-voice); font-style: italic; font-weight: 400; color: var(--accent); letter-spacing: -0.01em; }
 
@@ -232,8 +230,6 @@ em { font-family: var(--font-voice); font-style: italic; font-weight: 400; color
 .heart { fill: #ff8fa3; filter: drop-shadow(0 0 6px rgb(255 143 163 / 0.6)); animation: beat 1.8s ease-in-out infinite; }
 @keyframes beat { 0%, 100% { transform: scale(1); } 15% { transform: scale(1.18); } 30% { transform: scale(1); } 45% { transform: scale(1.12); } }
 .foot-in > p:not(.made) { max-width: 70ch; }
-.sources { margin: 0 0 22px; padding-left: 18px; display: grid; gap: 4px; }
-.sources li:target { color: var(--accent); }
 
 /* Floating CTA */
 .float { position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: var(--z-float); transform: translate(-50%, 160%); transition: transform 600ms var(--ease-expo); }
