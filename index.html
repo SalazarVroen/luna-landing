@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>LunaOS · Stop trying to sleep</title>
+    <meta name="description" content="LunaOS is an AI-guided insomnia program built on CBT-I, the treatment guidelines recommend first. Take the free 2-minute sleep check and join the beta waitlist." />
+    <meta name="theme-color" content="#080A22" />
+    <meta property="og:title" content="LunaOS · Stop trying to sleep" />
+    <meta property="og:description" content="An AI-guided insomnia program built on the most proven treatment there is. Beta now open, with an inaugural price." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>document.documentElement.classList.add('js')</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position: absolute">
+      <defs>
+        <radialGradient id="moon" cx="35%" cy="28%" r="78%">
+          <stop offset="0%" stop-color="#F2FDFF" />
+          <stop offset="55%" stop-color="#B4F2FD" />
+          <stop offset="100%" stop-color="#6CCDE2" />
+        </radialGradient>
+        <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#B4F2FD" stop-opacity=".28" />
+          <stop offset="45%" stop-color="#B4F2FD" stop-opacity=".08" />
+          <stop offset="100%" stop-color="#B4F2FD" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="curve" x1="0" x2="1">
+          <stop offset="0%" stop-color="#6CCDE2" />
+          <stop offset="100%" stop-color="#F2FDFF" />
+        </linearGradient>
+        <linearGradient id="area" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#B4F2FD" stop-opacity=".22" />
+          <stop offset="100%" stop-color="#B4F2FD" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <a class="skip" href="#beta">Skip to the beta sign-up</a>
+
+    <header class="bar">
+      <a href="#top" class="logo" aria-label="LunaOS home">
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a9 9 0 1 0 5 15.5A7.5 7.5 0 1 1 16 3z" fill="url(#moon)" /></svg>
+        LunaOS
+      </a>
+      <a href="#beta" class="btn btn-sm btn-glass" data-open-join>Join the waitlist</a>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-h">
+        <canvas class="sky" aria-hidden="true"></canvas>
+        <div class="hero-in">
+          <p class="chip" data-reveal><span class="pulse" aria-hidden="true"></span>Prelaunch · Beta now open</p>
+          <div class="hero-moon" aria-hidden="true">
+            <svg viewBox="0 0 240 240">
+              <circle cx="120" cy="120" r="118" fill="url(#halo)" class="halo" />
+              <path d="M138 52a68 68 0 1 0 46 104a57 57 0 1 1 -46 -104z" fill="url(#moon)" />
+              <path d="M84 134q6 5 12 0" fill="none" stroke="#0D0F2E" stroke-width="3" stroke-linecap="round" opacity=".8" />
+            </svg>
+          </div>
+          <h1 id="hero-h" class="title" aria-label="Stop trying to sleep."><span class="letters" aria-hidden="true">Stop trying</span> <em class="letters" aria-hidden="true">to sleep.</em></h1>
+          <p class="lead" data-reveal style="--d: 0.9s">An AI-guided program built on the most proven treatment for insomnia. Less effort. Deeper sleep.</p>
+          <div class="cta-row" data-reveal style="--d: 1.1s">
+            <a href="#beta" class="btn btn-glow" data-open-check>Take the free 2-minute sleep check</a>
+            <a href="#beta" class="btn btn-ghost" data-open-join>Join the waitlist</a>
+          </div>
+        </div>
+        <div class="night" aria-hidden="true">
+          <span class="night-time">3:12 am</span>
+          <span class="night-thought">“Why is my brain wide awake?”</span>
+        </div>
+        <span class="scroll-cue" aria-hidden="true"></span>
+      </section>
+
+      <!-- The idea, lit word by word as you scroll -->
+      <section class="statement" aria-label="The idea behind LunaOS">
+        <p class="lit">Insomnia isn’t a willpower problem. The harder you try to sleep, the more awake your brain becomes. <span class="accent">Sleep isn’t something you do.</span> <span class="accent">It’s something you allow.</span></p>
+      </section>
+
+      <!-- Numbers -->
+      <section class="sec numbers" aria-labelledby="num-h">
+        <div class="wrap">
+          <h2 id="num-h" data-reveal>A common problem. <em>A proven fix.</em></h2>
+          <div class="stats">
+            <figure class="stat" data-reveal>
+              <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" /><circle class="ring-on" cx="60" cy="60" r="54" pathLength="100" style="--v: 10" /></svg>
+              <p class="big"><span>1</span><small>in</small><span>10</span></p>
+              <figcaption>adults live with chronic insomnia.<sup><a href="#src-1">1</a></sup></figcaption>
+            </figure>
+            <figure class="stat" data-reveal style="--d: 0.12s">
+              <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" /><circle class="ring-on" cx="60" cy="60" r="54" pathLength="100" style="--v: 80" /></svg>
+              <p class="big"><small>up to</small><span data-count="80">80</span><small>%</small></p>
+              <figcaption>of people sleep better with CBT-I, the method LunaOS is built on.<sup><a href="#src-2">2</a></sup></figcaption>
+            </figure>
+            <figure class="stat" data-reveal style="--d: 0.24s">
+              <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" /><circle class="ring-on" cx="60" cy="60" r="54" pathLength="100" style="--v: 100" /></svg>
+              <p class="big"><small>#</small><span>1</span></p>
+              <figcaption>first treatment clinical guidelines recommend for chronic insomnia, ahead of sleeping pills.<sup><a href="#src-3">3</a></sup></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Science: two systems -->
+      <section class="sec science" aria-labelledby="sci-h">
+        <div class="wrap">
+          <h2 id="sci-h" data-reveal>Your sleep runs on <em>two systems.</em></h2>
+          <p class="sub" data-reveal>Work with them and sleep comes on its own. Fight them and you lie awake.</p>
+
+          <div class="panels">
+            <article class="panel" data-reveal>
+              <div class="panel-head">
+                <h3>Sleep pressure</h3>
+                <div class="toggle" role="group" aria-label="Show a day">
+                  <button type="button" aria-pressed="true" data-day="normal">A normal day</button>
+                  <button type="button" aria-pressed="false" data-day="nap">With a 4 pm nap</button>
+                </div>
+              </div>
+              <svg class="pressure" viewBox="0 0 640 280" role="img" aria-label="Sleep pressure builds through the day and clears overnight. A late nap lowers it before bedtime.">
+                <rect class="night-zone" x="0" y="20" width="0" height="220" rx="12" />
+                <g class="grid"></g>
+                <path class="p-area" fill="url(#area)" />
+                <path class="p-line" fill="none" stroke="url(#curve)" stroke-width="3.5" stroke-linecap="round" />
+                <circle class="p-dot" r="7" fill="#F2FDFF" />
+                <line class="bed-line" y1="20" y2="240" />
+                <text class="bed-label" y="14">Bedtime</text>
+              </svg>
+              <p class="panel-note" data-note>Every hour awake builds adenosine, your brain’s pressure to sleep. By bedtime it’s high, and sleep comes easily.</p>
+            </article>
+
+            <article class="panel" data-reveal style="--d: 0.12s">
+              <div class="panel-head">
+                <h3>Your body clock</h3>
+                <p class="now"><span data-now-time>--:--</span> where you are</p>
+              </div>
+              <div class="clock-wrap">
+                <svg class="clock" viewBox="0 0 280 280" role="img" aria-label="A 24-hour body clock pointing at the time now">
+                  <defs>
+                    <linearGradient id="dayNight" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#FFE7B3" stop-opacity=".9" />
+                      <stop offset="45%" stop-color="#B4F2FD" stop-opacity=".55" />
+                      <stop offset="55%" stop-color="#3A3F86" stop-opacity=".9" />
+                      <stop offset="100%" stop-color="#1C2050" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="140" cy="140" r="118" fill="none" stroke="url(#dayNight)" stroke-width="16" opacity=".85" />
+                  <g class="ticks"></g>
+                  <text x="140" y="62" text-anchor="middle" class="clock-l">noon</text>
+                  <text x="140" y="226" text-anchor="middle" class="clock-l">midnight</text>
+                  <g class="hand">
+                    <line x1="140" y1="140" x2="140" y2="40" stroke="#F2FDFF" stroke-width="3" stroke-linecap="round" />
+                    <circle cx="140" cy="34" r="10" fill="url(#moon)" />
+                  </g>
+                  <circle cx="140" cy="140" r="6" fill="#F2FDFF" />
+                </svg>
+              </div>
+              <p class="panel-note" data-clock-note>Your body clock times when you feel alert and when you feel sleepy, across the whole day.</p>
+              <p class="panel-fact">It runs a little over 24 hours,<sup><a href="#src-4">4</a></sup> so morning light resets it every day.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Myth or fact -->
+      <section class="sec myths" aria-labelledby="myth-h">
+        <div class="wrap">
+          <h2 id="myth-h" data-reveal>Myth or fact?</h2>
+          <p class="sub" data-reveal>Tap a card. Some of what you’ve heard about sleep is keeping you up.</p>
+          <ul class="cards" role="list"></ul>
+        </div>
+      </section>
+
+      <!-- Luna -->
+      <section class="sec luna" aria-labelledby="luna-h">
+        <div class="wrap split">
+          <div>
+            <h2 id="luna-h" data-reveal>Meet Luna. <em>Awake when you aren’t.</em></h2>
+            <p class="sub" data-reveal>Your AI sleep guide. Calm, brief, and built on clinical protocol. Luna guides; she never guesses.</p>
+            <div class="scenes" role="tablist" aria-label="Moments with Luna" data-reveal>
+              <button type="button" role="tab" aria-selected="true" data-scene="0">3 am</button>
+              <button type="button" role="tab" aria-selected="false" data-scene="1">Morning</button>
+              <button type="button" role="tab" aria-selected="false" data-scene="2">Racing mind</button>
+            </div>
+          </div>
+          <div class="phone" data-reveal style="--d: 0.15s">
+            <div class="phone-top">
+              <span class="orb" aria-hidden="true"></span>
+              <span><b>Luna</b><small>AI sleep guide · not a doctor</small></span>
+            </div>
+            <div class="chat" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Human in the loop, kept short -->
+      <section class="sec duo" aria-labelledby="duo-h">
+        <div class="wrap">
+          <div class="duo-art" aria-hidden="true">
+            <span class="duo-orb ai">Luna</span>
+            <svg viewBox="0 0 300 60" preserveAspectRatio="none"><path d="M0 30 C 75 0, 225 60, 300 30" /></svg>
+            <span class="duo-orb human">You + counsellor</span>
+          </div>
+          <h2 id="duo-h" data-reveal>AI every night. <em>A real counsellor when it matters.</em></h2>
+          <p class="sub" data-reveal>Luna handles the nightly work. A trained counsellor meets you in person at the key moments, and signs off every change to your plan.</p>
+        </div>
+      </section>
+
+      <!-- Beta sign-up and inaugural offer -->
+      <section class="sec beta" id="beta" aria-labelledby="beta-h">
+        <div class="wrap">
+          <div class="pass" data-reveal>
+            <div class="pass-in">
+              <p class="chip"><span class="pulse" aria-hidden="true"></span>LunaOS Beta</p>
+              <h2 id="beta-h">Be first to sleep <em>without trying.</em></h2>
+              <ul class="perks" role="list">
+                <li><b>Beta access</b><span>Use LunaOS before public launch.</span></li>
+                <li><b>Inaugural price</b><span>₹9,999 instead of ₹25,000.</span></li>
+                <li><b>Shape Luna</b><span>Beta users help decide what we build.</span></li>
+              </ul>
+              <div class="price" aria-label="Inaugural offer: 9,999 rupees, down from 25,000 rupees">
+                <p class="price-tag" aria-hidden="true"><s>₹25,000</s><span class="save">60% off</span></p>
+                <p class="price-now" aria-hidden="true"><span class="rupee">₹</span>9,999</p>
+                <p class="price-note">Inaugural offer for beta users · the full 6-week program</p>
+              </div>
+              <div class="cta-row">
+                <button type="button" class="btn btn-glow" data-open-check>Take the free sleep check</button>
+                <button type="button" class="btn btn-ghost" data-open-join>Join the waitlist</button>
+              </div>
+              <p class="fine">The sleep check is free, and so is joining the waitlist. No payment now: we’ll be in touch before launch.</p>
+              <noscript><p class="fine">The sleep check and waitlist need JavaScript turned on.</p></noscript>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p class="wordmark" aria-hidden="true">LunaOS</p>
+      <div class="wrap foot-in">
+        <ol class="sources">
+          <li id="src-1">Morin CM et al. Insomnia disorder. <i>Nature Reviews Disease Primers</i>, 2015.</li>
+          <li id="src-2">Morin CM et al. Psychological and behavioral treatment of insomnia. <i>Sleep</i>, 2006.</li>
+          <li id="src-3">Qaseem A et al. Management of chronic insomnia disorder in adults. <i>Annals of Internal Medicine</i>, 2016. Riemann D et al. European guideline for the diagnosis and treatment of insomnia. <i>Journal of Sleep Research</i>, 2017.</li>
+          <li id="src-4">Czeisler CA et al. Stability, precision, and near-24-hour period of the human circadian pacemaker. <i>Science</i>, 1999.</li>
+          <li id="src-5">Harvey AG, Tang NKY. (Mis)perception of sleep in insomnia. <i>Psychological Bulletin</i>, 2012.</li>
+          <li id="src-6">Ansfield ME, Wegner DM, Bowser R. Ironic effects of sleep urgency. <i>Behaviour Research and Therapy</i>, 1996.</li>
+        </ol>
+        <p>LunaOS is a wellbeing program, not a diagnosis or a replacement for medical care. If you’re in crisis or think you might harm yourself, contact your local emergency number now.</p>
+        <div class="foot-row">
+          <p>We only use your email to tell you about LunaOS. © 2026 LunaOS</p>
+          <button type="button" class="motion-btn" data-motion aria-pressed="false">Pause animation</button>
+        </div>
+      </div>
+    </footer>
+
+    <div class="float" hidden>
+      <button type="button" class="btn btn-glow" data-open-join>Join the waitlist</button>
+    </div>
+
+    <dialog class="sheet" aria-labelledby="sheet-title">
+      <canvas class="sheet-sky" aria-hidden="true"></canvas>
+      <div class="sheet-in">
+        <div class="sheet-top">
+          <button type="button" class="round" data-back aria-label="Back">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
+          </button>
+          <div class="phase" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100">
+            <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="#1C2050" stroke="#2C3170" stroke-width="1.5" /><path class="phase-lit" fill="url(#moon)" /></svg>
+            <span class="phase-label"></span>
+          </div>
+          <button type="button" class="round" data-close aria-label="Close">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+          </button>
+        </div>
+        <div class="sheet-body"></div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

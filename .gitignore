@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+.env.local
+
+# Local tooling and internal planning (not for the public repo)
+.claude/
+.impeccable/
+PLAN.md
