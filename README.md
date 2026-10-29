@@ -11,7 +11,10 @@ npm install
 npm run dev        # http://localhost:5174
 npm run build      # type check + production build into dist/
 npm run preview
+npm run deploy     # build for GitHub Pages and push to the gh-pages branch
 ```
+
+Live site: https://salazarvroen.github.io/luna-landing/ (GitHub Pages, served from the `gh-pages` branch).
 
 ## Waitlist
 
