@@ -199,8 +199,8 @@ em { font-family: var(--font-voice); font-style: italic; font-weight: 400; color
 
 /* What the program includes */
 .kit-list { list-style: none; margin: 44px 0 0; padding: 0; }
-.kit-list li { display: grid; grid-template-columns: 44px 1fr; gap: 16px; align-items: start; padding: 26px 0; border-top: 1px solid rgb(180 242 253 / 0.12); }
-.kit-list li:last-child { border-bottom: 1px solid rgb(180 242 253 / 0.12); }
+.kit-list > li { display: grid; grid-template-columns: 44px 1fr; gap: 16px; align-items: start; padding: 26px 0; border-top: 1px solid rgb(180 242 253 / 0.12); }
+.kit-list > li:last-child { border-bottom: 1px solid rgb(180 242 253 / 0.12); }
 .kit-list h3 { font-size: 1.1875rem; font-weight: 800; letter-spacing: -0.015em; }
 .kit-list p { margin-top: 6px; color: var(--text-soft); }
 .kit-ic { position: relative; display: block; width: 44px; height: 44px; }
@@ -208,8 +208,8 @@ em { font-family: var(--font-voice); font-style: italic; font-weight: 400; color
 .kit-ic.human i { position: absolute; top: 18%; width: 64%; height: 64%; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #4a50a0, #262a6e 70%); box-shadow: inset 0 0 0 1px rgb(180 242 253 / 0.35), 0 0 24px rgb(108 91 214 / 0.35); }
 .kit-ic.human i:first-child { left: 0; }
 .kit-ic.human i:last-child { right: 0; background: radial-gradient(circle at 35% 30%, #f2fdff, #b4f2fd 50%, #6ccde2); mix-blend-mode: screen; opacity: 0.85; }
-.kit-ic.wind svg { width: 100%; height: 100%; animation: dusk 6s ease-in-out infinite; }
-@keyframes dusk { 0%, 100% { filter: drop-shadow(0 0 4px rgb(180 242 253 / 0.25)); opacity: 0.75; } 50% { filter: drop-shadow(0 0 16px rgb(180 242 253 / 0.7)); opacity: 1; } }
+.kit-tags { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.kit-tags li { padding: 6px 12px; border-radius: 999px; background: rgb(180 242 253 / 0.07); box-shadow: inset 0 0 0 1px rgb(180 242 253 / 0.2); font-size: max(0.875rem, 12px); font-weight: 700; color: var(--accent); }
 .kit-foot { margin-top: 26px; color: var(--text-soft); }
 .kit-foot a { margin-left: 6px; white-space: nowrap; color: var(--accent); font-weight: 700; text-underline-offset: 4px; }
 
@@ -363,7 +363,7 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
   .pass-in { padding: 56px 48px 48px; }
   .pass .cta-row { max-width: none; }
   .form { padding: 26px 24px; }
-  .kit-list li { grid-template-columns: 60px 1fr; gap: 20px; }
+  .kit-list > li { grid-template-columns: 60px 1fr; gap: 20px; }
   .kit-list h3 { font-size: 1.3125rem; }
   .kit-ic { width: 56px; height: 56px; }
 }
