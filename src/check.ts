@@ -269,7 +269,7 @@ function form(title?: string, sub?: string) {
   // The price is always in view before anyone joins.
   const price = document.createElement('div');
   price.className = 'form-price';
-  price.innerHTML = '<span><b>LunaOS Beta</b>Inaugural price for beta users</span><span class="form-price-n"><s>₹25,000</s><b>₹9,999</b></span><p>Joining the waitlist is free. No payment now. We’ll be in touch before launch.</p>';
+  price.innerHTML = '<span><b>LunaOS · 6-week program</b>Sleep counsellor, Luna app, nightly wind-down</span><span class="form-price-n"><s>₹25,000</s><b>₹9,999</b></span><p>Inaugural price for beta users. Joining the waitlist is free, no payment now. We’ll be in touch before launch.</p>';
 
   f.append(field('First name', name), field('Email', email), field('Country', country), seg, price, consent, err, submit);
 
